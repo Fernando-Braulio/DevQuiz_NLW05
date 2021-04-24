@@ -37,7 +37,7 @@ class AwnserWidget extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: isSelected ? _selectedColorCardRight : AppColors.white,
+          color: isSelected ? _selectedColorCardRight.withOpacity(0.7) : AppColors.white,
           borderRadius: BorderRadius.circular(10),
           border: Border.fromBorderSide(BorderSide(
               color: isSelected ? _selectedBorderCardRight : AppColors.border)),
